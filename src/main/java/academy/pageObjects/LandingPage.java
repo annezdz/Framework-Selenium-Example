@@ -39,11 +39,11 @@ public class LandingPage {
     }
 
     public WebElement getPopup() {
-        return driver.findElement(popUp);
+        return driver.findElement(dismissPopUp);
     }
 
-    public WebElement getDismissButton() {
-        return driver.findElement(dismissPopUp);
+    public int getPopUpsSize() {
+        return driver.findElements(dismissPopUp).size();
     }
 
     public WebElement getTitle() {
